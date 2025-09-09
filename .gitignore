@@ -1,0 +1,24 @@
+# dependencias y builds
+node_modules
+dist
+.cache
+coverage
+.DS_Store
+
+# envs y estados locales
+.env
+.env.*
+*.local
+.wrangler/
+
+# artefactos de herramientas
+.vercel
+.netlify
+
+# 🔎 Importante: no ignores migraciones
+# packages/db/migrations  (¡NO lo pongas aquí!)
+
+# ✅ Mejor: COMMIT del lockfile para builds reproducibles
+# (no lo ignores)
+# pnpm-lock.yaml
+apps/api/.dev.vars
