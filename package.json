@@ -1,0 +1,22 @@
+{
+  "name": "cfw-neon-react-starter",
+  "private": true,
+  "packageManager": "pnpm@9",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "pnpm -C apps/api dev",
+    "dev:web": "pnpm -C apps/web dev",
+    "dev": "concurrently -n api,web -c blue,green \"pnpm dev:api\" \"pnpm dev:web\"",
+    "typecheck": "tsc -b",
+    "db:gen": "drizzle-kit generate --config packages/db/drizzle.config.ts",
+    "db:push": "drizzle-kit push --config packages/db/drizzle.config.ts"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "drizzle-kit": "^0.26.2",
+    "typescript": "^5.5.4"
+  }
+}

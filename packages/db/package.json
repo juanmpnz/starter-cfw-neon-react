@@ -1,0 +1,15 @@
+{
+  "name": "@starter/db",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./schema": "./schema.ts"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.26.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.36.0"
+  }
+}

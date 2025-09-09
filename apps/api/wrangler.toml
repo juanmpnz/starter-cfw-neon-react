@@ -1,0 +1,10 @@
+name = "starter-api"
+main = "src/index.ts"
+compatibility_date = "2025-09-01"
+# Habilitar sólo si alguna lib lo necesita
+# compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# variables no sensibles (si hiciera falta)
+
+# Secrets se cargan con: wrangler secret put DATABASE_URL

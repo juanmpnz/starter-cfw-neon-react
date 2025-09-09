@@ -1,0 +1,11 @@
+{
+  "name": "@starter/shared",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./schemas/todo": "./src/schemas/todo.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  }
+}
